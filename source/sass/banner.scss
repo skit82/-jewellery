@@ -1,0 +1,35 @@
+.banner {
+  height: 463px;
+  background: url("../img/banner-desktop@1x.jpg") center no-repeat #a87b62;
+  background-size: cover;
+  text-align: center;
+  padding-top: 182px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/banner-desktop@2x.jpg") center no-repeat #a87b62;
+    height: 463px;
+    background-size: cover;
+  }
+}
+
+.banner__wrapper h2 {
+  margin: 0;
+  font-family: $font-family-mono;
+  font-weight: 700;
+  font-size: $font-size--h2;
+  line-height: $font-size--h2 + 13;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.banner__wrapper p {
+  margin: 0;
+  margin-top: -8px;
+  font-family: $font-family-mono;
+  font-style: italic;
+  font-weight: 400;
+  font-size: $font-size--h3 + 16;
+  line-height: $font-size--h3 + 27;
+  color:  $white;
+}

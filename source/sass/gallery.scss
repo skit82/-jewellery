@@ -1,0 +1,132 @@
+.gallery {
+  text-align: center;
+}
+
+.gallery h3 {
+  font-family: $font-family-mono;
+  font-weight: 700;
+  font-size: $font-size--h3 + 12;
+  line-height: $font-size--h3 + 22;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 31px;
+  letter-spacing: 0.03em;
+}
+
+.gallery__follow {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  color: $text-color;
+  margin: 0 auto;
+  position: relative;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    border: 1px solid #a87b62;
+    top: 25px;
+    left: 0;
+  }
+}
+
+.gallery__images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 65px;
+  flex-wrap: nowrap;
+}
+
+.gallery__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 27px;
+  flex-wrap: nowrap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gallery__block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1023px) {
+  .gallery h3 {
+    margin-bottom: 19px;
+  }
+
+  .gallery__images {
+    justify-content: space-between;
+    max-width: 680px;
+  }
+
+  .gallery__block {
+    margin-right: 0;
+    height: 244px;
+    justify-content: space-between;
+  }
+
+  .gallery__block2 img {
+    width: 231px;
+    height: 240px;
+  }
+
+  .gallery__block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 282px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery__images {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 290px;
+    flex-wrap: wrap;
+    margin-top: 52px;
+  }
+
+  .gallery__block2 {
+    margin-bottom: 5px;
+  }
+
+  .gallery__block2 img {
+    width: 145px;
+    height: 226px;
+  }
+
+  .gallery__block {
+    height: 236px;
+
+    &:last-child {
+      display: none;
+    }
+
+    &:nth-child(3n) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      height: 121px;
+      min-width: 290px;
+    }
+  }
+
+  .gallery__block-custom picture:last-child {
+    margin-top: 6px;
+  }
+}

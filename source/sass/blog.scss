@@ -1,0 +1,284 @@
+.blog {
+  text-align: center;
+  margin-top: 111px;
+}
+
+.blog h3 {
+  font-family: $font-family-mono;
+  font-weight: 700;
+  font-size: $font-size--h3 + 12;
+  line-height: $font-size--h3 + 22;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.blog__read {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  color: $text-color;
+  margin-bottom: 0;
+  position: relative;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    border: 1px solid #a87b62;
+    top: 25px;
+    left: 0;
+  }
+}
+
+.blog__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.blog__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+  height: auto;
+}
+
+.blog__left-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  &:first-child {
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    margin-top: 15px;
+  }
+}
+
+.blog__left-content img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.blog__left-content picture {
+  display: block;
+}
+
+.blog__card {
+  max-width: 285px;
+  min-width: 220px;
+  background-color: #f0eae4;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 4;
+  color: #9b9997;
+  padding-top: 12%;
+  flex-grow: 1;
+}
+
+.blog__card p {
+  margin: 0 auto;
+  font-family: $font-family-mono;
+  font-weight: 600;
+  font-size: $font-size--h3 + 4;
+  line-height: $font-size--h3 + 12;
+  color: $black;
+  margin-top: 4%;
+  margin-bottom: 12%;
+  width: 100%;
+  padding: 0 20%;
+}
+
+.blog__card a {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  color: $text-color;
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 18%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 110px;
+    height: 0;
+    border: 1px solid #a87b62;
+    top: 25px;
+    left: calc(50% - 55px);
+  }
+}
+
+.blog__right {
+  position: relative;
+}
+
+.blog__right img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+.blog__card-move {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 47.5%;
+  padding-top: 60px;
+}
+
+@media (max-width: 1023px) {
+  .blog {
+    margin-top: 61px;
+  }
+
+  .blog__content {
+    flex-direction: column;
+  }
+
+  .blog__content picture {
+    max-height: 300px;
+  }
+
+  .blog__content img {
+    width: 339px;
+    height: 300px;
+  }
+
+  .blog__left {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .blog__left-content {
+    margin-bottom: 50px;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .blog__card {
+    width: 339px;
+    flex-grow: 1;
+    padding-top: 67px;
+    max-width: none;
+    height: 300px;
+  }
+
+  .blog__card a {
+    padding-bottom: 76px;
+
+    &::after {
+      width: 110px;
+      left: calc(50% - 55px);
+    }
+  }
+
+  .blog__card p {
+    padding: 0 25%;
+    margin: 12px auto 35px;
+  }
+
+  .blog__right {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .blog__card-move {
+    position: initial;
+    height: 300px;
+    padding-top: 82px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    margin-top: 56px;
+  }
+
+  .blog__content {
+    margin-top: 55px;
+  }
+
+  .blog__content img {
+    width: 290px;
+    height: 256px;
+  }
+
+  .blog__content picture {
+    height: 256px;
+  }
+
+  .blog__left {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blog__left-content {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .blog__card {
+    width: 290px;
+    height: 256px;
+    flex-grow: 0;
+    margin: 0 auto;
+    padding-top: 45px;
+    text-align: center;
+  }
+
+  .blog__card p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0 21%;
+    max-width: none;
+  }
+
+  .blog__left-content--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .blog__right {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .blog__card-move {
+    padding-top: 64px;
+  }
+}
