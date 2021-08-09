@@ -1,0 +1,263 @@
+.filter {
+  margin-right: 40px;
+
+  /* @media (max-width: 1070px) {
+    margin-right: 10px;
+  } */
+}
+
+.filter [type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter form {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 1070px) {
+    min-width: 230px;
+    max-width: 230px;
+  }
+}
+
+.filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter li {
+  padding: 25px 25px 0;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size--middle;
+  line-height: $font-size--middle + 4;
+  color: $text-color;
+  border: 1px solid #a87b62;
+  margin-top: -1px;
+}
+
+.filter__title p {
+  margin-top: 0;
+  padding: 0;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 100%;
+  height: 21px;
+}
+
+.filter label {
+  display: block;
+  width: 140px;
+  padding-left: 32px;
+  margin-bottom: 13px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #a87b62;
+    left: 9px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.filter input:checked + label::before {
+  width: 15px;
+  height: 15px;
+  left: 9px;
+  border: 1px solid #a87b62;
+  background: #a87b62;
+  cursor: pointer;
+}
+
+.filter input:focus + label::before {
+  opacity: 0.7;
+}
+
+.filter__button {
+  width: 15px;
+  height: 15px;
+  content: "";
+  border: none;
+  background: url("../img/arrow_down.svg") center no-repeat;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.filter__button--active {
+  background: url("../img/arrow_up.svg") center no-repeat;
+}
+
+.filter__title {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+}
+
+.filter [type="submit"] {
+  width: 100%;
+  height: 68px;
+  background: #a87b62;
+  border: none;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  color: $white;
+  cursor: pointer;
+}
+
+.filter [type="reset"] {
+  width: 100%;
+  height: 68px;
+  border: 1px solid #a87b62;
+  background: none;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size + 5;
+  color: $text-color;
+  cursor: pointer;
+}
+
+.filter__scale {
+  width: 198px;
+  height: 0;
+  border: 1px solid #f0eae4;
+}
+
+.filter__bar {
+  width: 90px;
+  height: 0;
+  border: 1px solid #a87b62;
+  margin-left: 30%;
+}
+
+.filter__toggle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #a87b62;
+  font-size: 0;
+}
+
+.filter__controls {
+  position: relative;
+  margin-top: 5px;
+}
+
+.filter__toggle--min {
+  position: absolute;
+  left: 45px;
+  top: -6px;
+}
+
+.filter__toggle--max {
+  position: absolute;
+  left: 149px;
+  top: -6px;
+}
+
+.filter__price {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: 38px;
+}
+
+.filter__price span {
+  &:last-child {
+    margin-left: 67px;
+  }
+}
+
+.filter__open {
+  display: none;
+}
+
+.filter__options {
+  display: none;
+  padding-bottom: 10px;
+}
+
+.filter__options--active {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+  .filter {
+    margin: 0 auto;
+
+    @media (max-width: 1070px) {
+      margin-right: 0;
+    }
+  }
+
+  .filter--disable form {
+    display: none;
+  }
+
+  .filter form {
+    max-width: 423px;
+    min-width: 423px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .filter__open {
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: 68px;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: $font-size;
+    line-height: $font-size + 5;
+    color: $white;
+    background: #a87b62;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .container-catalog {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-catalog {
+    margin-top: 0;
+  }
+
+  .filter form {
+    min-width: 270px;
+    max-width: 320px;
+  }
+
+  .filter__open {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}

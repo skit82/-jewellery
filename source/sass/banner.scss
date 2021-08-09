@@ -12,6 +12,19 @@
   }
 }
 
+.banner-catalog {
+  height: 261px;
+  padding-top: 92px;
+  background: url("../img/banner-catalog_desktop@1x.jpg") center no-repeat #a87b62;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/banner-catalog_desktop@2x.jpg") center no-repeat #a87b62;
+    height: 261px;
+    background-size: cover;
+  }
+}
+
 .banner__wrapper h2 {
   margin: 0;
   font-family: $font-family-mono;
@@ -32,4 +45,116 @@
   font-size: $font-size--h3 + 16;
   line-height: $font-size--h3 + 27;
   color:  $white;
+}
+
+.banner__wrapper-catalog h2 {
+  font-size: 34px;
+  line-height: 44px;
+  margin-bottom: 10px;
+  letter-spacing: 0;
+}
+
+.banner__wrapper-catalog p {
+  font-size: 22px;
+  line-height: 29px;
+}
+
+@media (max-width: 1023px) {
+  .banner {
+    background: url("../img/banner-tablet@1x.jpg") center no-repeat #a87b62;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/banner-tablet@2x.jpg") center no-repeat #a87b62;
+      height: 463px;
+      background-size: cover;
+    }
+  }
+
+  .banner-catalog {
+    background: url("../img/banner-catalog_tablet@1x.jpg") center no-repeat #a87b62;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/banner-catalog_tablet@2x.jpg") center no-repeat #a87b62;
+      height: 261px;
+      background-size: cover;
+    }
+  }
+
+  .banner__wrapper h2 {
+    margin-left: -16px;
+  }
+
+  .banner__wrapper p {
+    margin-left: -16px;
+  }
+
+  .banner__wrapper-catalog h2 {
+    font-size: 34px;
+    line-height: 44px;
+    margin-left: 0;
+  }
+
+  .banner__wrapper-catalog p {
+    font-size: 22px;
+    line-height: 29px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    background: url("../img/banner-mobile@1x.jpg") center no-repeat #a87b62;
+    background-size: cover;
+    height: 463px;
+    padding-top: 189px;
+    min-width: 320px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/banner-mobile@2x.jpg") center no-repeat #a87b62;
+      height: 463px;
+      background-size: cover;
+    }
+  }
+
+  .banner-catalog {
+    text-align: center;
+    height: 261px;
+    padding-top: 78px;
+    background: url("../img/banner-catalog_mobile@1x.jpg") center no-repeat #a87b62;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("../img/banner-catalog_mobile@2x.jpg") center no-repeat #a87b62;
+      height: 261px;
+      background-size: cover;
+    }
+  }
+
+  .banner__wrapper h2 {
+    font-size: 38px;
+    line-height: 49px;
+    margin-left: 3px;
+  }
+
+  .banner__wrapper p {
+    font-size: 34px;
+    line-height: 44px;
+    margin-left: 0;
+  }
+
+  .banner__wrapper-catalog h2 {
+    font-size: 34px;
+    line-height: 44px;
+    margin-left: 0;
+    margin-bottom: 3px;
+  }
+
+  .banner__wrapper-catalog p {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 auto;
+    width: 80%;
+  }
 }

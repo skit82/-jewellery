@@ -1,6 +1,6 @@
 .blog {
   text-align: center;
-  margin-top: 111px;
+  margin-top: 106px;
 }
 
 .blog h3 {
@@ -10,6 +10,7 @@
   line-height: $font-size--h3 + 22;
   margin-top: 0;
   margin-bottom: 18px;
+  letter-spacing: 0.03em;
 }
 
 .blog__read {
@@ -94,8 +95,8 @@
   font-size: $font-size--h3 + 4;
   line-height: $font-size--h3 + 12;
   color: $black;
-  margin-top: 4%;
-  margin-bottom: 12%;
+  margin-top: 5%;
+  margin-bottom: 13%;
   width: 100%;
   padding: 0 20%;
 }
@@ -145,12 +146,12 @@
   bottom: 0;
   width: 50%;
   height: 47.5%;
-  padding-top: 60px;
+  padding-top: 68px;
 }
 
 @media (max-width: 1023px) {
   .blog {
-    margin-top: 61px;
+    margin-top: 57px;
   }
 
   .blog__content {
@@ -175,7 +176,7 @@
     margin-bottom: 50px;
 
     &:first-child {
-      margin-bottom: 50px;
+      margin-bottom: 51px;
     }
 
     &:last-child {
@@ -195,14 +196,14 @@
     padding-bottom: 76px;
 
     &::after {
-      width: 110px;
-      left: calc(50% - 55px);
+      width: 97px;
+      left: calc(50% - 48px);
     }
   }
 
   .blog__card p {
     padding: 0 25%;
-    margin: 12px auto 35px;
+    margin: 15px auto 37px;
   }
 
   .blog__right {
@@ -215,7 +216,7 @@
   .blog__card-move {
     position: initial;
     height: 300px;
-    padding-top: 82px;
+    padding-top: 83px;
   }
 }
 
