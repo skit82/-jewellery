@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/cormorantgaramond-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
-<body>
+<body class="page-body">
   <svg style="display:none">
     <symbol id="icon-search" viewBox="0 0 14 14">
       <path d="M11.048 10.074L14 13.024l-.975.976-2.951-2.952A6.205 6.205 0 010 6.202 6.205 6.205 0 016.203 0a6.205 6.205 0 014.845 10.074zm-1.382-.512a4.808 4.808 0 001.36-3.36 4.823 4.823 0 00-4.823-4.824 4.822 4.822 0 00-4.825 4.825 4.823 4.823 0 004.825 4.824 4.808 4.808 0 003.36-1.361l.103-.104z"/>
@@ -41,7 +41,7 @@
       <path d="M15 1.543a5.875 5.875 0 01-1.768.516A3.263 3.263 0 0014.586.244a5.925 5.925 0 01-1.955.796 3.025 3.025 0 00-1.746-.996 2.913 2.913 0 00-1.954.344 3.206 3.206 0 00-1.353 1.543 3.48 3.48 0 00-.19 2.101 8.318 8.318 0 01-3.514-.995A8.868 8.868 0 011.044.604c-.273.501-.417 1.07-.416 1.65 0 1.137.543 2.142 1.368 2.73a2.924 2.924 0 01-1.393-.41v.04c0 .758.246 1.492.696 2.079.45.586 1.076.988 1.773 1.139-.454.13-.93.15-1.391.056.196.652.579 1.222 1.094 1.631a2.958 2.958 0 001.78.648c-.638.534-1.369.93-2.15 1.162-.782.233-1.6.3-2.405.196A8.318 8.318 0 004.717 13c5.661 0 8.757-4.999 8.757-9.334 0-.141-.004-.284-.01-.424A6.496 6.496 0 0015 1.544z" fill="#fff"/>
     </symbol>
   </svg>
-  <header class="page-header">
+  <header class="page-header page-header__bg">
     <div class="page-header__wrapper">
       <div class="page-header__top">
         <div class="page-header__top-form">
@@ -69,7 +69,7 @@
           </svg>
         </a>
         <div class="page-header__personal">
-          <a href="" class="page-header__personal-login page-header__personal-login--active">
+          <a href="formlogin.html" class="page-header__personal-login page-header__personal-login--active">
             Login
           </a>
           <a href="#" class="page-header__cart">
@@ -80,7 +80,7 @@
               0
             </span>
             <svg class="page-header__cart-image page-header__cart-image--active" width="18" height="16">
-                <use xlink:href="icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
             </svg>
           </a>
         </div>
@@ -133,7 +133,7 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="page-main">
     <section class="banner banner-catalog">
       <div class="banner__wrapper banner__wrapper-catalog">
         <h2>All Jewellery</h2>
@@ -410,7 +410,7 @@
       </section>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer page-footer">
     <div class="container footer__content">
       <div class="footer__form">
         <h3>The good stuff in your inbox</h3>

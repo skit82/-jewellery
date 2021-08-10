@@ -102,12 +102,13 @@
   }
 
   .gallery__block2 {
-    margin-bottom: 5px;
+    margin-bottom: 11px;
   }
 
   .gallery__block2 img {
-    width: 145px;
-    height: 226px;
+    width: 133px;
+    //height: 226px;
+    height: 232px;
   }
 
   .gallery__block {
@@ -126,7 +127,7 @@
     }
   }
 
-  .gallery__block-custom picture:last-child {
-    margin-top: 6px;
-  }
+  //.gallery__block-custom picture:last-child {
+    //margin-top: 6px;
+  //}
 }

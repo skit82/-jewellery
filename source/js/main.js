@@ -5,6 +5,9 @@
   var mainSlider = document.querySelector(".new__menu-slider");
   var filter = document.querySelector(".filter");
   var filterOpen = document.querySelector(".filter__open");
+  var filterOptions = document.querySelectorAll(".filter__options");
+  var filterButtons = document.querySelectorAll(".filter__button");
+  var filterTitles = document.querySelectorAll(".filter__title p");
   var accordionItems = document.querySelectorAll(".accordion");
   var accordionPanes = document.querySelectorAll(".accordion__pane");
   var header = document.querySelector(".page-header");
@@ -54,6 +57,33 @@
 
     filterOpen.addEventListener("click", function () {
       toggleClass(filter, "filter--disable");
+    });
+  }
+
+  var hideOptions = function () {
+    for (var i = 1; i < filterOptions.length; i++) {
+      removeClass(filterButtons[i], "filter__button--active");
+      removeClass(filterOptions[i], "filter__options--active");
+    }
+  }
+
+  if (filter) {
+    hideOptions();
+  }
+
+  if (filter) {
+    filterTitles.forEach(function (title, i) {
+      title.addEventListener("click", function () {
+        toggleClass(filterOptions[i], "filter__options--active");
+        toggleClass(filterButtons[i], "filter__button--active");
+      });
+    });
+
+    filterButtons.forEach(function (button, i) {
+      button.addEventListener("click", function () {
+        toggleClass(button, "filter__button--active");
+        toggleClass(filterOptions[i], "filter__options--active");
+      });
     });
   }
 
