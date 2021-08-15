@@ -1,0 +1,19 @@
+.body__overflow {
+  overflow-y: hidden;
+}
+
+.body__overflow--menu {
+  overflow-y: hidden;
+}
+
+.body-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}

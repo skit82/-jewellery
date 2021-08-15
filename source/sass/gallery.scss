@@ -79,6 +79,10 @@
     justify-content: space-between;
   }
 
+  .gallery__block img {
+    width: 133px;
+  }
+
   .gallery__block2 img {
     width: 231px;
     height: 240px;
@@ -111,6 +115,7 @@
     height: 232px;
   }
 
+
   .gallery__block {
     height: 236px;
 
@@ -127,7 +132,11 @@
     }
   }
 
+  .gallery__block--custom img {
+    height: 87px;
+  }
+
   //.gallery__block-custom picture:last-child {
-    //margin-top: 6px;
+  //margin-top: 6px;
   //}
 }

@@ -93,3 +93,85 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slick-dots {
+  list-style: none;
+  position: absolute;
+  left: 48%;
+  top: 403px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  width: 48px;
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $font-size--h1;
+  color: #9b9997;
+  cursor: pointer;
+
+  @media (max-width: 1365px) {
+    top: 290px;
+  }
+}
+
+.slick-active {
+  color: $text-color;
+}
+
+.slick__dots a {
+  color: #9b9997;
+}
+
+.slick-disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .slick-dots {
+    left: 41%;
+    top: 449px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slick-dots {
+    list-style: none;
+    position: absolute;
+    left: 28%;
+    top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    width: 50px;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: $font-size;
+    line-height: $font-size + 5;
+    color: #9b9997;
+  }
+
+  .slick-dots li {
+    height: 21px;
+    margin-top: -21px;
+    display: none;
+  }
+
+  .slick-dots .slick-active {
+    display: block;
+  }
+
+  .slick-active p {
+    margin-top: 70px;
+    width: 129px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .slick__dots a {
+    color: #9b9997;
+  }
+}

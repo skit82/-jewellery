@@ -58,43 +58,22 @@
   padding-left: 5px;
 }
 
-// .questions__button {
-  // width: 15px;
-  // height: 15px;
-  // position: absolute;
-  // content: "";
-  // left: calc(100% - 62px);
-  // top: 47px;
-  // border: none;
-  // background: url("../img/arrow_down.svg") center no-repeat;
-  // cursor: pointer;
-  // font-size: 0;
-// }
+//.questions__button {
+//width: 15px;
+//height: 15px;
+//position: absolute;
+//content: "";
+//left: calc(100% - 62px);
+//top: 47px;
+//border: none;
+//background: url("../img/arrow_down.svg") center no-repeat;
+//cursor: pointer;
+//font-size: 0;
+//}
 
-// .questions__button--active {
-  // background: url("../img/arrow_up.svg") center no-repeat;
-// }
-
-.accordion__toggle {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  content: "";
-  left: calc(100% - 62px);
-  top: 47px;
-  border: none;
-  background: url("../img/arrow_up.svg") center no-repeat;
-  cursor: pointer;
-  font-size: 0;
-
-  &--inactive {
-    background: url("../img/arrow_down.svg") center no-repeat;
-  }
-}
-
-.accordion__pane--hidden {
-  display: none;
-}
+//.questions__button--active {
+//background: url("../img/arrow_up.svg") center no-repeat;
+//}
 
 @media (max-width: 1023px) {
   .questions {
@@ -106,16 +85,16 @@
     margin-bottom: 74px;
   }
 
-  // .questions__button {
-    // width: 23px;
-    // height: 12px;
-    // background: url("../img/arrow_down_mobile.svg") center no-repeat;
-    // left: calc(100% - 72px);
-  // }
+  //.questions__button {
+  //width: 23px;
+  //height: 12px;
+  //background: url("../img/arrow_down_mobile.svg") center no-repeat;
+  //left: calc(100% - 72px);
+  //}
 
-  // .questions__button--active {
-    // background: url("../img/arrow__up_mobile.svg") center no-repeat;
-  // }
+  //.questions__button--active {
+  //background: url("../img/arrow__up_mobile.svg") center no-repeat;
+  //}
 
   .questions__list-item {
     padding-left: 48px;
@@ -126,17 +105,6 @@
     margin-bottom: 44px;
     width: 85%;
     padding-left: 0;
-  }
-
-  .accordion__toggle {
-    width: 23px;
-    height: 12px;
-    background: url("../img/arrow_up_mobile.svg") center no-repeat;
-    left: calc(100% - 72px);
-
-    &--inactive {
-      background: url("../img/arrow_down_mobile.svg") center no-repeat;
-    }
   }
 }
 

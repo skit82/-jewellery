@@ -1,0 +1,33 @@
+.accordion__toggle {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  content: "";
+  left: calc(100% - 62px);
+  top: 47px;
+  border: none;
+  background: url("../img/arrow_up.svg") center no-repeat;
+  cursor: pointer;
+  font-size: 0;
+
+  &--inactive {
+    background: url("../img/arrow_down.svg") center no-repeat;
+  }
+}
+
+.accordion__pane--hidden {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .accordion__toggle {
+    width: 23px;
+    height: 12px;
+    background: url("../img/arrow_up_mobile.svg") center no-repeat;
+    left: calc(100% - 72px);
+
+    &--inactive {
+      background: url("../img/arrow_down_mobile.svg") center no-repeat;
+    }
+  }
+}

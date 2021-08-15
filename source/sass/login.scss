@@ -134,15 +134,6 @@
   display: block;
 }
 
-.overlay-login {
-  width: 1000vh;
-  height: 1000vh;
-  position: absolute;
-  z-index: -1;
-  top: -500vh;
-  left: -500vh;
-}
-
 @media (max-width: 1023px) {
   .login form {
     min-width: 430px;
