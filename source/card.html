@@ -73,15 +73,10 @@
           <a href="formlogin.html" class="page-header__personal-login page-header__personal-login--active">
             Login
           </a>
-          <a href="#" class="page-header__cart">
-            <span class="page-header__cart-text">
-              Cart
-            </span>
-            <span class="page-header__cart-counter">
-              0
-            </span>
+          <a href="#" class="page-header__cart page-header__cart--text">
+            Cart 0
             <svg class="page-header__cart-image page-header__cart-image--active" width="18" height="16">
-                <use xlink:href="#icon-cart"></use>
+              <use xlink:href="#icon-cart"></use>
             </svg>
           </a>
         </div>
@@ -173,11 +168,11 @@
           </div>
         </div>
         <div class="card__info">
-          <h3>Gold Necklace</h3>
+          <h2>Gold Necklace</h2>
           <p class="card__info-price">$ 115</p>
           <div class="card__info-additional">
-            <button class="card__button">Description</button>
-            <button class="card__button card__active">Additional info</button>
+            <button type="button" class="card__button">Description</button>
+            <button type="button" class="card__button card__active">Additional info</button>
           </div>
           <div class="card__data">
             <ul class="card__data-list">
@@ -196,20 +191,26 @@
             </ul>
             <a href="modalcart.html" class="card__add">Add to cart</a>
             <ul class="card__delivery">
-              <li>14 Day Returns</li>
-              <li>2-Year Warranty</li>
-              <li>Free Shipping</li>
+              <li>
+                <p>14 Day Returns</p>
+              </li>
+              <li>
+                <p>2-Year Warranty</p>
+              </li>
+              <li>
+                <p>Free Shipping</p>
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="new">
+      <section class="new new-card">
         <div class="new__menu">
           <button class="new__button new__button-left">
             Назад
           </button>
           <div class="new__menu-title">
-            <h3>New In</h3>
+            <h3>You May Also Like</h3>
             <a href="catalog.html">Shop Now</a>
           </div>
           <button class="new__button new__button-right">

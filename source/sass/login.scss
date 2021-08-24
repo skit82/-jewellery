@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 45px;
-  font-family: $font-family;
+  font-family: inherit;
   font-weight: 500;
   font-size: $font-size--middle;
   line-height: $font-size--middle + 7;
@@ -35,7 +35,8 @@
   font-weight: 700;
   font-size: $font-size--h3 + 11;
   line-height: $font-size--h3 + 22;
-  margin-top: 187px;
+  margin-top: 190px;
+  margin-bottom: 29px;
   text-align: center;
 }
 
@@ -45,9 +46,11 @@
   background: #f0eae4;
   position: relative;
   border-bottom: 1px solid #1d1613;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   padding-bottom: 10px;
   border-radius: 0;
+  font-family: inherit;
+
 
   &::placeholder {
     color: #9b9997;
@@ -68,11 +71,11 @@
 
   &:last-child {
     color: $text-color;
-    margin-left: 10px;
+    margin-left: 4px;
   }
 
   &:nth-child(3n) {
-    margin-top: -33px;
+    margin-top: -28px;
     text-align: right;
     font-size: 12px;
     line-height: 18px;
@@ -95,7 +98,7 @@
   color: $white;
   font-size: 16px;
   line-height: 21px;
-  margin-top: 35px;
+  margin-top: 45px;
 
   &:hover {
     opacity: 0.8;
@@ -105,7 +108,7 @@
 .login__wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .login p {
@@ -118,7 +121,7 @@
   width: 54px;
   height: 54px;
   position: absolute;
-  left: 373px;
+  left: 376px;
   top: 0;
   border: none;
   background: url("../img/close_form.svg") center no-repeat;
@@ -136,8 +139,34 @@
 
 @media (max-width: 1023px) {
   .login form {
-    min-width: 430px;
+    min-width: 442px;
     padding: 0 51px;
+  }
+
+  .login h2 {
+    margin-top: 188px;
+    margin-bottom: 32px;
+  }
+
+  .login input {
+    margin-bottom: 33px;
+  }
+
+  .login__close {
+    left: 384px;
+    top: 4px;
+  }
+
+  .login a:nth-child(3n) {
+    margin-top: -28px;
+  }
+
+  .login button[type=submit] {
+    margin-top: 45px;
+  }
+
+  .login__wrapper {
+    margin-top: 14px;
   }
 }
 
@@ -157,24 +186,31 @@
     &:nth-child(3n) {
       width: 59%;
       margin-left: 41%;
+      margin-top: -22px;
     }
+  }
+
+  .login input {
+    margin-bottom: 27px;
   }
 
   .login h2 {
     font-size: $font-size--h3 + 2;
     line-height: $font-size--h3 + 9;
     margin-top: 121px;
+    margin-bottom: 26px;
   }
 
   .login__close {
-    left: 218px;
+    left: 221px;
+    top: -5px;
   }
 
   .login__wrapper {
-    margin-top: 12px;
+    margin-top: 14px;
   }
 
   .login button[type="submit"] {
-    margin-top: 20px;
+    margin-top: 36px;
   }
 }

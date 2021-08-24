@@ -5,7 +5,7 @@
   box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
   z-index: 9;
   position: fixed;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
@@ -29,7 +29,7 @@
   font-size: $font-size--h3 + 4;
   line-height: $font-size--h3 + 12;
   text-align: center;
-  margin-top: 46px;
+  margin-top: 48px;
   margin-bottom: 47px;
 }
 
@@ -53,7 +53,7 @@
 .modal-cart__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 47px;
+  margin-bottom: 34px;
 }
 
 .modal-cart__title {
@@ -64,8 +64,9 @@
 }
 
 .modal-cart__title h3 {
-  margin-top: 0;
-  margin-bottom: 14px;
+  margin-top: -6px;
+  margin-bottom: 8px;
+  font-size: 18px;
   font-family: $font-family-mono;
   font-weight: 700;
 }
@@ -73,6 +74,7 @@
 .modal-cart__title p {
   font-family: $font-family;
   font-weight: 400;
+  margin: 0;
 }
 
 .modal-cart__counter {
@@ -131,7 +133,7 @@
 
 .modal-cart__total p {
   &:last-child {
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -162,16 +164,71 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .modal-cart {
+    top: 68.3%;
+    padding: 0 29px;
+  }
+
+  .modal-cart__close {
+    left: 445px;
+  }
+
+  .modal-cart h2 {
+    margin-top: 47px;
+  }
+
+  .modal-cart__item img {
+    width: 88px;
+  }
+
+  .modal-cart__counter {
+    height: 73px;
+  }
+
+  .modal-cart__title h3 {
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: 8px;
+  }
+
+  .modal-cart__title p {
+    margin-top: 0;
+  }
+
+  .modal-cart__item {
+    margin-bottom: 47px;
+  }
+
+  .modal-cart__total::after {
+    left: -29px;
+    top: -18px;
+  }
+
+  .modal-cart__total p {
+    margin-top: 0;
+  }
+
+  .modal-cart__buttons a {
+    width: 47%;
+  }
+
+  .modal-cart__total {
+    margin-bottom: 22px;
+  }
+}
+
 @media (max-width: 767px) {
   .modal-cart {
     min-width: 290px;
     max-width: 290px;
     padding: 0 15px;
     min-height: 519px;
+    top: 47%;
   }
 
   .modal-cart h2 {
-    margin-top: 38px;
+    margin-top: 39px;
     font-size: $font-size--h3 + 2;
     line-height: $font-size--h3 + 7;
     width: 80%;
@@ -197,19 +254,23 @@
   }
 
   .modal-cart__close {
-    left: 255px;
+    left: 250px;
     width: 34px;
     height: 34px;
-    top: 10px;
+    top: 5px;
   }
 
   .modal-cart__item {
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 
   .modal-cart__item img {
     width: 70px;
     height: 63px;
+  }
+
+  .modal-cart__counter {
+    height: 68px;
   }
 
   .modal-cart__total {

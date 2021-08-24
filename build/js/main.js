@@ -234,12 +234,21 @@
 
   var modalCart = document.querySelector(".modal-cart");
   var modalCartClose = document.querySelector(".modal-cart__close");
+  var modalButton = document.querySelector(".modal-cart__counter button");
   var addButton = document.querySelector(".card__add");
   var loginForm = document.querySelector(".login");
+  var isStorageSupport = true;
+  var storage = "";
   var body = document.querySelector("body");
   var pageMask = document.querySelector(".mask");
   var loginOverlay = document.querySelector(".overlay");
   var mediaTablet = window.matchMedia("(max-width: 1023px");
+
+  try {
+    storage = localStorage.getItem("cart");
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
   var toggleClass = function (element, selector) {
     element.classList.toggle(selector);
@@ -257,9 +266,13 @@
     addButton.addEventListener("click", function (evt) {
       evt.preventDefault();
       addClass(modalCart, "modal-cart--active");
+      if (storage) {
+        modalButton.value = localStorage.getItem("cart");
+      }
       addClass(body, "body__overflow");
       addClass(pageMask, "mask-active");
       addClass(loginOverlay, "overlay-active");
+      modalButton.focus();
     });
   }
 

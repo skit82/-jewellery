@@ -55,12 +55,17 @@ a {
 
   .container-catalog {
     display: block;
+    margin-bottom: 5px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .container-catalog {
+    margin-bottom: -4px;
   }
 }
 

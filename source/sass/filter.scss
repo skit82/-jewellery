@@ -35,7 +35,7 @@
 }
 
 .filter li {
-  padding: 25px 25px 0;
+  //padding: 25px 25px 0;
   font-family: $font-family;
   font-weight: 500;
   font-size: $font-size--middle;
@@ -47,20 +47,21 @@
 
 .filter__title p {
   margin-top: 0;
-  padding: 0;
+  margin-bottom: 0;
+  padding: 24px;
   font-size: $font-size;
   line-height: $font-size + 5;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
   cursor: pointer;
   width: 100%;
-  height: 21px;
+  height: 100%;
 }
 
 .filter label {
   display: block;
   width: 140px;
-  padding-left: 32px;
-  margin-bottom: 13px;
+  padding-left: 34px;
+  margin-bottom: 12px;
   position: relative;
   cursor: pointer;
 
@@ -94,23 +95,26 @@
 }
 
 .filter__button {
-  width: 15px;
-  height: 15px;
+  //width: 50px;
+  //height: 70px;
   content: "";
   border: none;
   background: url("../img/arrow_down.svg") center no-repeat;
   cursor: pointer;
+  padding: 25px;
   font-size: 0;
+  margin-right: 6px;
 }
 
 .filter__button--active {
   background: url("../img/arrow_up.svg") center no-repeat;
+  margin-right: 8px;
 }
 
 .filter__title {
   display: flex;
   justify-content: space-between;
-  height: 42px;
+  //height: 42px;
 }
 
 .filter [type="submit"] {
@@ -120,6 +124,7 @@
   border: none;
   margin-top: 35px;
   margin-bottom: 25px;
+  padding-right: 22px;
   font-family: $font-family;
   font-weight: 500;
   font-size: $font-size;
@@ -164,7 +169,7 @@
 
 .filter__controls {
   position: relative;
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .filter__toggle--min {
@@ -197,11 +202,20 @@
 
 .filter__options {
   display: none;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+  padding-left: 24px;
 }
 
 .filter__options--active {
   display: block;
+}
+
+.filter__options--product  {
+  padding-left: 24px;
+}
+
+.filter__options--price {
+  padding-bottom: 12px;
 }
 
 @media (max-width: 1023px) {

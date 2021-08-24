@@ -101,15 +101,19 @@
   font-size: $font-size--middle;
   line-height: $font-size--h1;
   padding-top: 12px;
+  //margin-right: -10px;
 }
 
 .page-header__personal a {
   color: $text-color;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .page-header__personal-login {
-  margin-right: 10px;
-
   &:hover {
     opacity: 0.5;
   }
@@ -177,7 +181,7 @@
   .page-header__top {
     position: relative;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .page-header__personal {
@@ -210,6 +214,7 @@
 
   .page-header__top-burger {
     stroke: #000000;
+    margin-top: -15px;
   }
 
   .page-header__top-burger--active {
@@ -232,20 +237,22 @@
     fill: #ffffff;
   }
 
+  .page-header__cart--text {
+    //display: none;
+    font-size: 0;
+  }
+
   .page-header__cart-image {
     display: block;
     stroke: $text-color;
     fill: #ffffff;
+    margin-top: -28px;
   }
 
   .page-header__cart-image--active {
     display: block;
     stroke: #ffffff;
     fill: #a87b62;
-  }
-
-  .page-header__cart-text {
-    display: none;
   }
 
   .page-header__cart-counter {
@@ -318,11 +325,19 @@
   }
 
   .page-header__top {
-    margin-bottom: 21px;
+    margin-bottom: 6px;
   }
 
   .page-header__top form {
     top: 84px;
+  }
+
+  .page-header__top-burger {
+    margin-top: -12px;
+  }
+
+  .page-header__cart-image {
+    margin-top: -27px;
   }
 
   .page-header__personal-login {

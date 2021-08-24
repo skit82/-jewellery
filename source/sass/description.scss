@@ -1,0 +1,21 @@
+.description {
+  padding-top: 50px;
+  font-family: $font-family;
+  font-size: $font-size--h1;
+  line-height: $font-size--h1 + 11;
+  font-weight: 500;
+  color: $text-color;
+}
+
+.description__list {
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.description__item a {
+  color: $text-color;
+}
