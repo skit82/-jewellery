@@ -110,8 +110,9 @@
   text-align: center;
   color: #9b9997;
   margin: 0;
-  margin-bottom: 32px;
-  padding: 0 36px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  //padding: 0 36px;
 }
 
 .footer__list {
@@ -218,6 +219,7 @@
   .footer__form p {
     text-align: inherit;
     padding: 0;
+    margin-top: 0;
     margin-bottom: 43px;
   }
 

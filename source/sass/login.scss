@@ -21,7 +21,7 @@
   background: url("../img/login_bg_desktop@1x.jpg") top no-repeat, #f0eae4;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    border-radius: 10px;
+    //border-radius: 10px;
   }
 }
 
@@ -141,6 +141,7 @@
   .login form {
     min-width: 442px;
     padding: 0 51px;
+    background: url("../img/login_bg_tablet@1x.jpg") top no-repeat, #f0eae4;
   }
 
   .login h2 {
